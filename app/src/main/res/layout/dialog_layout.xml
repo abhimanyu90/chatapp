@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="335dp"
+    android:layout_height="335dp"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_layout"
+    tools:context=".dialog_layout">
+
+
+    <ImageView
+        android:id="@+id/logoutdia"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/logout_graphics"
+        app:layout_constraintBottom_toTopOf="@+id/nobnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/yesbnt"
+        android:layout_width="134dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/Yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nobnt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/nobnt"
+        android:layout_width="124dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yesbnt"
+        app:layout_constraintTop_toBottomOf="@+id/logoutdia" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="199dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/do_you_really_want_to_logout"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/yesbnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutdia" />
+</androidx.constraintlayout.widget.ConstraintLayout>
